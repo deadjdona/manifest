@@ -9,6 +9,9 @@ jobs:
   tidy:
     name: Tidy up
     runs-on: macos-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - run: brew install tidy-html5
