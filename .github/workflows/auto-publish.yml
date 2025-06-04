@@ -6,6 +6,9 @@ on:
       - gh-pages
   pull_request: {}
 
+permissions:
+  contents: read
+
 jobs:
   validate-and-publish:
     name: Validate and Publish
