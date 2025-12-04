@@ -13,7 +13,7 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: brew install tidy-html5
       - run: tidy -config tidyconfig.txt -o index.html index.html
       - uses: peter-evans/create-pull-request@v7
