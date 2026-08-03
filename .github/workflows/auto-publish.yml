@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest # only linux supported at present
     steps:
       - uses: actions/checkout@v7
-      - uses: w3c/spec-prod@v2
+      - uses: w3c/spec-prod@v2.13.2
         with:
           TOOLCHAIN: respec
           VALIDATE_LINKS: true
